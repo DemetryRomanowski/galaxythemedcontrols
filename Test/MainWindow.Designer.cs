@@ -41,8 +41,8 @@ namespace ThemeEditor
             this.ControlLabel = new System.Windows.Forms.Label();
             this.ValueLabel = new System.Windows.Forms.Label();
             this.LiveControlViewPanel = new System.Windows.Forms.Panel();
-            this.NewThemeButton = new GalaxyButton();
-            this.SaveButton = new GalaxyButton();
+            this.NewThemeButton = new LibGalaxyControls.CustomControls.Buttons.GalaxyButton();
+            this.SaveButton = new LibGalaxyControls.CustomControls.Buttons.GalaxyButton();
             this.LiveJsonViewer = new System.Windows.Forms.RichTextBox();
             this.SuspendLayout();
             // 
@@ -122,9 +122,14 @@ namespace ThemeEditor
             // 
             // NewThemeButton
             // 
+            this.NewThemeButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.NewThemeButton.ButtonTheme = ((LibGalaxyControls.Source.Interfaces.IButtonTheme)(resources.GetObject("NewThemeButton.ButtonTheme")));
+            this.NewThemeButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.NewThemeButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.NewThemeButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(238)))), ((int)(((byte)(239)))));
             this.NewThemeButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.NewThemeButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
+            this.NewThemeButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.NewThemeButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
             this.NewThemeButton.Location = new System.Drawing.Point(272, 104);
             this.NewThemeButton.Name = "NewThemeButton";
             this.NewThemeButton.Size = new System.Drawing.Size(128, 24);

@@ -98,6 +98,33 @@ namespace LibGalaxyControls.CustomControls.Buttons
                 this.FlatAppearance.MouseDownBackColor = newTheme.MouseDownColor;
                 this.FlatAppearance.MouseOverBackColor = newTheme.MouseOverColor;
 
+                if (newTheme.TextAlignment != null)
+                {
+                    switch (newTheme.TextAlignment)
+                    {
+                        case "TopLeft" : this.TextAlign = ContentAlignment.TopLeft;
+                            break;
+                        case "TopRight": this.TextAlign = ContentAlignment.TopRight;
+                            break;
+                        case "Left": this.TextAlign = ContentAlignment.MiddleLeft;
+                            break;
+                        case "Right": this.TextAlign = ContentAlignment.MiddleRight;
+                            break;
+                        case "BottomLeft": this.TextAlign = ContentAlignment.BottomLeft;
+                            break;
+                        case "BottomRight": this.TextAlign = ContentAlignment.BottomRight;
+                            break;
+                        case "Center": this.TextAlign = ContentAlignment.MiddleCenter;
+                            break;
+                        case "TopCenter": this.TextAlign = ContentAlignment.TopCenter;
+                            break;
+                        case "BottomCenter": this.TextAlign = ContentAlignment.BottomCenter;
+                            break;
+                        default: MessageBox.Show(@"Text align did not match any possible alignments");
+                            break;
+                    }
+                }
+
                 if (newTheme.FontName != null && newTheme.FontSize > 4)
                     this.Font = new Font(newTheme.FontName, newTheme.FontSize, FontStyle.Regular);
 
@@ -134,6 +161,15 @@ namespace LibGalaxyControls.CustomControls.Buttons
             catch 
             {
                 //Unhandled
+            }
+
+            this.ColorThemes.Clear();
+
+            foreach (IButtonTheme colorTheme in Source.ButtonTheme.ButtonThemeSingleton.GetAllThemes())
+            {
+                ButtonTheme theme = (ButtonTheme)colorTheme;
+
+                this.ColorThemes.Add(theme);
             }
         }
 

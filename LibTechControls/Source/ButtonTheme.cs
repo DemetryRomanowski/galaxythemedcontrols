@@ -13,7 +13,12 @@ namespace LibGalaxyControls.Source
     [Serializable]
     public class ButtonTheme : Theme, IButtonTheme
     {
-        public static ButtonTheme ButtonThemeSingleton { get; set; }
+        public static ButtonTheme ButtonThemeSingleton { get; set; } = new ButtonTheme();
+
+        /// <summary>
+        /// Default ctor
+        /// </summary>
+        public ButtonTheme() { }
 
         /// <summary>
         /// Override ctor
