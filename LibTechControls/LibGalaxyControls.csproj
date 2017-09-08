@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{318D7C59-669A-40A4-B7ED-D17F0E38A3E2}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>LibGalaxyControls</RootNamespace>
+    <AssemblyName>LibGalaxyControls</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.10.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Source\ButtonTheme.cs" />
+    <Compile Include="CustomControls\Buttons\GalaxyButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Source\DesignerEditor\ButtonThemeSelector.cs" />
+    <Compile Include="Source\Interfaces\IButtonTheme.cs" />
+    <Compile Include="Source\Interfaces\IRadioButtonTheme.cs" />
+    <Compile Include="Source\Interfaces\ITheme.cs" />
+    <Compile Include="Source\Json\JsonTheme.cs" />
+    <Compile Include="Source\Json\ThemeObjects\JsonButton.cs" />
+    <Compile Include="Source\Json\ThemeObjects\JsonRadioButton.cs" />
+    <Compile Include="Source\Json\SimpleObjects\Size.cs" />
+    <Compile Include="Source\Json\ThemeObjects\JsonTextField.cs" />
+    <Compile Include="Source\RadioButtonTheme.cs" />
+    <Compile Include="Source\StaticConverters\ColorConverter.cs" />
+    <Compile Include="CustomControls\Forms\GalaxyForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Source\Theme.cs" />
+    <Compile Include="Source\TypeConverter\ThemeConverter.cs" />
+    <Service Include="{94E38DFF-614B-4cbd-B67C-F211BB35CE8B}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Fonts\Lato-Black.ttf" />
+    <None Include="Fonts\Lato-BlackItalic.ttf" />
+    <None Include="Fonts\Lato-Bold.ttf" />
+    <None Include="Fonts\Lato-BoldItalic.ttf" />
+    <None Include="Fonts\Lato-Hairline.ttf" />
+    <None Include="Fonts\Lato-HairlineItalic.ttf" />
+    <None Include="Fonts\Lato-Heavy.ttf" />
+    <None Include="Fonts\Lato-HeavyItalic.ttf" />
+    <None Include="Fonts\Lato-Italic.ttf" />
+    <None Include="Fonts\Lato-Light.ttf" />
+    <None Include="Fonts\Lato-LightItalic.ttf" />
+    <None Include="Fonts\Lato-Medium.ttf" />
+    <None Include="Fonts\Lato-MediumItalic.ttf" />
+    <None Include="Fonts\Lato-Regular.ttf" />
+    <None Include="Fonts\Lato-Semibold.ttf" />
+    <None Include="Fonts\Lato-SemiboldItalic.ttf" />
+    <None Include="Fonts\Lato-Thin.ttf" />
+    <None Include="Fonts\Lato-ThinItalic.ttf" />
+    <None Include="packages.config" />
+    <Content Include="themes.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="CustomControls\Controls\" />
+    <Folder Include="CustomControls\Fields\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

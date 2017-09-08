@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThemeEditor", "Test\ThemeEditor.csproj", "{5D365D28-5AC1-4465-AC38-07F348E9B0FE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibGalaxyControls", "LibTechControls\LibGalaxyControls.csproj", "{318D7C59-669A-40A4-B7ED-D17F0E38A3E2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5D365D28-5AC1-4465-AC38-07F348E9B0FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D365D28-5AC1-4465-AC38-07F348E9B0FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D365D28-5AC1-4465-AC38-07F348E9B0FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D365D28-5AC1-4465-AC38-07F348E9B0FE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{318D7C59-669A-40A4-B7ED-D17F0E38A3E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{318D7C59-669A-40A4-B7ED-D17F0E38A3E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{318D7C59-669A-40A4-B7ED-D17F0E38A3E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{318D7C59-669A-40A4-B7ED-D17F0E38A3E2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {194B0DB8-1DFC-4F87-97C5-E44B54B421CD}
+	EndGlobalSection
+EndGlobal
