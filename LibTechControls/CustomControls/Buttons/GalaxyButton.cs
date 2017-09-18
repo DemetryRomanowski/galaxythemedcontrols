@@ -69,7 +69,7 @@ namespace LibGalaxyControls.CustomControls.Buttons
         public GalaxyButton()
             : base()
         {
-            foreach (IButtonTheme colorTheme in Source.Objects.ButtonTheme.ButtonThemeSingleton.GetAllThemes())
+            foreach (ITheme colorTheme in Source.ButtonTheme.ButtonThemeSingleton.GetAllThemes())
             {
                 ButtonTheme theme = (ButtonTheme) colorTheme;
 
@@ -88,8 +88,10 @@ namespace LibGalaxyControls.CustomControls.Buttons
         /// <summary>
         /// Callback when a theme is changed
         /// </summary>
-        private void ThemeChanged(IButtonTheme newTheme)
+        private void ThemeChanged(ITheme Theme)
         {
+            ButtonTheme newTheme = (ButtonTheme) Theme;
+
             try
             {
                 this.BackColor = newTheme.BackColor;
@@ -165,7 +167,7 @@ namespace LibGalaxyControls.CustomControls.Buttons
 
             this.ColorThemes.Clear();
 
-            foreach (IButtonTheme colorTheme in Source.Objects.ButtonTheme.ButtonThemeSingleton.GetAllThemes())
+            foreach (ITheme colorTheme in Source.ButtonTheme.ButtonThemeSingleton.GetAllThemes())
             {
                 ButtonTheme theme = (ButtonTheme)colorTheme;
 

@@ -33,7 +33,7 @@ namespace LibGalaxyControls.Source.Objects.BaseObject
         /// Returns all the themes
         /// </summary>
         /// <returns></returns>
-        internal abstract List<IButtonTheme> GetAllThemes();
+        internal abstract List<ITheme> GetAllThemes();
         
         /// <summary>
         /// Override toString

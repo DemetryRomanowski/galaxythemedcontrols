@@ -16,7 +16,7 @@ namespace LibGalaxyControls.Source.Objects
             
         }
 
-        internal override List<IButtonTheme> GetAllThemes()
+        internal override List<ITheme> GetAllThemes()
         {
             throw new System.NotImplementedException();
         }

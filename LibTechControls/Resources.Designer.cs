@@ -61,7 +61,22 @@ namespace LibGalaxyControls {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to {&quot;Themes&quot;: [{&quot;Name&quot;: &quot;Default&quot;,&quot;BackColor&quot;: &quot;#FFFFFF&quot;,&quot;ForeColor&quot;: &quot;#003333&quot;,&quot;BorderColor&quot;: &quot;#FFFFFF&quot;,&quot;MouseDownColor&quot;: &quot;#44FFFF&quot;,&quot;MouseOverColor&quot;: &quot;#BEEEEF&quot;,&quot;FontName&quot;: &quot;Arial&quot;,&quot;FontSize&quot;: 14}]}.
+        ///   Looks up a localized string similar to {
+        ///    //Control
+        ///    &quot;ButtonThemes&quot;: {
+        ///        &quot;Themes&quot;: [
+        ///            //Default
+        ///            {
+        ///                &quot;Name&quot;: &quot;Default&quot;,
+        ///                &quot;BackColor&quot;: &quot;#FFFFFF&quot;,
+        ///                &quot;ForeColor&quot;: &quot;#003333&quot;,
+        ///                &quot;BorderColor&quot;: &quot;#FFFFFF&quot;,
+        ///                &quot;MouseDownColor&quot;: &quot;#44FFFF&quot;,
+        ///                &quot;MouseOverColor&quot;: &quot;#BEEEEF&quot;,
+        ///                &quot;FontName&quot;: &quot;Lato&quot;,
+        ///                &quot;FontSize&quot;: 14,
+        ///                //If using resource image then just put the resource name in imagepath
+        ///  [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string DefaultJSON {
             get {

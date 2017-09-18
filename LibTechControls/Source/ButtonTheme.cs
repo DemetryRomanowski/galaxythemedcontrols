@@ -59,9 +59,9 @@ namespace LibGalaxyControls.Source
         public String ButtonText { get; set; }
         public Size Size { get; set; }
 
-        internal override List<IButtonTheme> GetAllThemes()
+        internal override List<ITheme> GetAllThemes()
         {
-            return AvailableJsonColorThemes.Select(availableJsonColorTheme => (IButtonTheme)new ButtonTheme(availableJsonColorTheme)).ToList();
+            return AvailableJsonColorThemes.Select(availableJsonColorTheme => (ITheme)new ButtonTheme(availableJsonColorTheme)).ToList();
         }
     }
 }

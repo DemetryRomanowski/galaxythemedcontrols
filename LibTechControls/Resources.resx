@@ -173,7 +173,88 @@
     <value>fonts\lato-thinitalic.ttf;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="DefaultJSON" xml:space="preserve">
-    <value>{"Themes": [{"Name": "Default","BackColor": "#FFFFFF","ForeColor": "#003333","BorderColor": "#FFFFFF","MouseDownColor": "#44FFFF","MouseOverColor": "#BEEEEF","FontName": "Arial","FontSize": 14}]}</value>
+    <value>{
+    //Control
+    "ButtonThemes": {
+        "Themes": [
+            //Default
+            {
+                "Name": "Default",
+                "BackColor": "#FFFFFF",
+                "ForeColor": "#003333",
+                "BorderColor": "#FFFFFF",
+                "MouseDownColor": "#44FFFF",
+                "MouseOverColor": "#BEEEEF",
+                "FontName": "Lato",
+                "FontSize": 14,
+                //If using resource image then just put the resource name in imagepath
+                "UseResourceForImage": false,
+                "ImagePath": null,
+                "TextAlignment": "Center",
+                "ButtonName": null, 
+                "ButtonText": null, 
+                "Size": null
+            },
+            {
+                "Name": "Example",
+                "BackColor": "#FFFFFF",
+                "ForeColor": "#003333",
+                "BorderColor": "#FFFFFF",
+                "MouseDownColor": "#44FFFF",
+                "MouseOverColor": "#BEEEEF",
+                "FontName": "Lato",
+                "FontSize": 14,
+                //If using resource image then just put the resource name in imagepath
+                "UseResourceForImage": true,
+                "ImagePath": "MyImage",
+                "TextAlignment": "Right",
+                "ButtonName": "Default Button", 
+                "ButtonText": "Button", 
+                "Size": { 
+                    "Width": 300, 
+                    "Height": 400
+                }
+            }
+        ]
+    },
+    "RadioButtonThemes": { 
+        "Themes": [
+            //Default
+            {
+                "Name": "Default",
+                "BackColor": "#FFFFFF",
+                "ForeColor": "#003333",
+                "BorderColor": "#FFFFFF",
+                "MouseDownColor": "#44FFFF",
+                "MouseOverColor": "#BEEEEF",
+                "FontName": "Lato",
+                "FontSize": 14,
+                //If using resource image then just put the resource name in imagepath
+                "ImagePath": null,
+                "TextAlignment": "Center",
+                "ButtonName": "Default Button", 
+                "ButtonText": "Button", 
+                "Size": { 
+                    "Width": 200, 
+                    "Height": 100
+                }
+            }
+        ]
+    },
+    "TextFieldThemes": {
+        "Themes": [
+            //Default
+            {
+                "Name": "Default",
+                "BackColor": "#FFFFFF",
+                "ForeColor": "#003333",
+                "BorderColor": "#FFFFFF",
+                "FontName": "Lato",
+                "FontSize": 14
+            }
+        ]
+    }
+}</value>
     <comment>The default file contents for themes.json</comment>
   </data>
 </root>
