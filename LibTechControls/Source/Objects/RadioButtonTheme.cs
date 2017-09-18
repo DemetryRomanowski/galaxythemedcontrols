@@ -1,12 +1,13 @@
-﻿
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Drawing;
-using LibGalaxyControls.Source.Interfaces;
+using LibGalaxyControls.Source.Objects.BaseObject;
+using LibGalaxyControls.Source.Objects.Interfaces;
 using Size = LibGalaxyControls.Source.Json.SimpleObjects.Size;
 
-namespace LibGalaxyControls.Source
+namespace LibGalaxyControls.Source.Objects
 {
+    [Serializable]
     public class RadioButtonTheme : Theme, IRadioButtonTheme
     {
 

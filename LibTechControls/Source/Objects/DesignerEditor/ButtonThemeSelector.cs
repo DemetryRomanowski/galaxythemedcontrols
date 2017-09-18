@@ -4,9 +4,9 @@ using System.Drawing.Design;
 using System.Windows.Forms;
 using System.Windows.Forms.Design;
 using LibGalaxyControls.CustomControls.Buttons;
-using LibGalaxyControls.Source.Interfaces;
+using LibGalaxyControls.Source.Objects.Interfaces;
 
-namespace LibGalaxyControls.Source.DesignerEditor
+namespace LibGalaxyControls.Source.Objects.DesignerEditor
 {
     public class ButtonThemeSelector : UITypeEditor
     {

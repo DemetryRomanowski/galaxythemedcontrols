@@ -5,13 +5,13 @@ using System.Drawing;
 using System.Drawing.Design;
 using System.Resources;
 using System.Windows.Forms;
-using LibGalaxyControls.Source;
-using LibGalaxyControls.Source.DesignerEditor;
-using LibGalaxyControls.Source.Interfaces;
+using LibGalaxyControls.Source.Objects;
+using LibGalaxyControls.Source.Objects.DesignerEditor;
+using LibGalaxyControls.Source.Objects.Interfaces;
 
 namespace LibGalaxyControls.CustomControls.Buttons
 {
-    [ToolboxItem(true), Category("TechGalaxy Controls")]
+    [ToolboxItem(true), Category("TechGalaxy Controls"), ToolboxBitmap(typeof(Button))]
     public class GalaxyButton : Button
     {
         #region PrivateMembers
@@ -69,14 +69,14 @@ namespace LibGalaxyControls.CustomControls.Buttons
         public GalaxyButton()
             : base()
         {
-            foreach (IButtonTheme colorTheme in Source.ButtonTheme.ButtonThemeSingleton.GetAllThemes())
+            foreach (IButtonTheme colorTheme in Source.Objects.ButtonTheme.ButtonThemeSingleton.GetAllThemes())
             {
                 ButtonTheme theme = (ButtonTheme) colorTheme;
 
                 this.ColorThemes.Add(theme);
             }
 
-            ThemeChanged(Source.ButtonTheme.ButtonThemeSingleton.GetAllThemes()[0]);
+            ThemeChanged(Source.Objects.ButtonTheme.ButtonThemeSingleton.GetAllThemes()[0]);
 
             this.FlatStyle = FlatStyle.Flat;
         }
@@ -165,7 +165,7 @@ namespace LibGalaxyControls.CustomControls.Buttons
 
             this.ColorThemes.Clear();
 
-            foreach (IButtonTheme colorTheme in Source.ButtonTheme.ButtonThemeSingleton.GetAllThemes())
+            foreach (IButtonTheme colorTheme in Source.Objects.ButtonTheme.ButtonThemeSingleton.GetAllThemes())
             {
                 ButtonTheme theme = (ButtonTheme)colorTheme;
 

@@ -1,12 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
-using LibGalaxyControls.Source.Interfaces;
 using LibGalaxyControls.Source.Json;
 using LibGalaxyControls.Source.Json.ThemeObjects;
+using LibGalaxyControls.Source.Objects.Interfaces;
 using Newtonsoft.Json;
 
-namespace LibGalaxyControls.Source
+namespace LibGalaxyControls.Source.Objects.BaseObject
 {
     [Serializable]
     public abstract class Theme : ITheme
@@ -44,6 +44,9 @@ namespace LibGalaxyControls.Source
             return Name;
         }
 
+        /// <summary>
+        /// The name
+        /// </summary>
         public String Name { get; set; }
     }
 }

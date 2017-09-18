@@ -31,7 +31,6 @@ namespace ThemeEditor
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainWindow));
             this.FieldCmbx = new System.Windows.Forms.ComboBox();
             this.ValueTxb = new System.Windows.Forms.TextBox();
             this.ThemeCmbx = new System.Windows.Forms.ComboBox();
@@ -41,9 +40,9 @@ namespace ThemeEditor
             this.ControlLabel = new System.Windows.Forms.Label();
             this.ValueLabel = new System.Windows.Forms.Label();
             this.LiveControlViewPanel = new System.Windows.Forms.Panel();
-            this.NewThemeButton = new LibGalaxyControls.CustomControls.Buttons.GalaxyButton();
-            this.SaveButton = new LibGalaxyControls.CustomControls.Buttons.GalaxyButton();
             this.LiveJsonViewer = new System.Windows.Forms.RichTextBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // FieldCmbx
@@ -120,42 +119,6 @@ namespace ThemeEditor
             this.LiveControlViewPanel.Size = new System.Drawing.Size(512, 584);
             this.LiveControlViewPanel.TabIndex = 8;
             // 
-            // NewThemeButton
-            // 
-            this.NewThemeButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.NewThemeButton.ButtonTheme = ((LibGalaxyControls.Source.Interfaces.IButtonTheme)(resources.GetObject("NewThemeButton.ButtonTheme")));
-            this.NewThemeButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.NewThemeButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.NewThemeButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(238)))), ((int)(((byte)(239)))));
-            this.NewThemeButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.NewThemeButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.NewThemeButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
-            this.NewThemeButton.Location = new System.Drawing.Point(272, 104);
-            this.NewThemeButton.Name = "NewThemeButton";
-            this.NewThemeButton.Size = new System.Drawing.Size(128, 24);
-            this.NewThemeButton.TabIndex = 9;
-            this.NewThemeButton.Text = "Button";
-            this.NewThemeButton.UseVisualStyleBackColor = false;
-            this.NewThemeButton.Click += new System.EventHandler(this.NewThemeButton_Click);
-            // 
-            // SaveButton
-            // 
-            this.SaveButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.SaveButton.ButtonTheme = null;
-            this.SaveButton.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.SaveButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.SaveButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(238)))), ((int)(((byte)(239)))));
-            this.SaveButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.SaveButton.Font = new System.Drawing.Font("Arial", 8F);
-            this.SaveButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
-            this.SaveButton.Location = new System.Drawing.Point(8, 504);
-            this.SaveButton.Name = "SaveButton";
-            this.SaveButton.Size = new System.Drawing.Size(392, 80);
-            this.SaveButton.TabIndex = 10;
-            this.SaveButton.Text = "Save";
-            this.SaveButton.UseVisualStyleBackColor = false;
-            this.SaveButton.Click += new System.EventHandler(this.SaveButton_Click);
-            // 
             // LiveJsonViewer
             // 
             this.LiveJsonViewer.Location = new System.Drawing.Point(8, 192);
@@ -164,13 +127,31 @@ namespace ThemeEditor
             this.LiveJsonViewer.TabIndex = 11;
             this.LiveJsonViewer.Text = "";
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(272, 102);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(128, 23);
+            this.button1.TabIndex = 12;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(8, 502);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(392, 90);
+            this.button2.TabIndex = 13;
+            this.button2.Text = "button2";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
             // MainWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.ClientSize = new System.Drawing.Size(927, 598);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.LiveJsonViewer);
-            this.Controls.Add(this.SaveButton);
-            this.Controls.Add(this.NewThemeButton);
             this.Controls.Add(this.LiveControlViewPanel);
             this.Controls.Add(this.ValueLabel);
             this.Controls.Add(this.ControlLabel);
@@ -202,9 +183,9 @@ namespace ThemeEditor
         private System.Windows.Forms.Label ControlLabel;
         private System.Windows.Forms.Label ValueLabel;
         private System.Windows.Forms.Panel LiveControlViewPanel;
-        private GalaxyButton NewThemeButton;
-        private GalaxyButton SaveButton;
         private System.Windows.Forms.RichTextBox LiveJsonViewer;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
     }
 }
 

@@ -1,11 +1,10 @@
 ﻿using System;
 using System.ComponentModel;
 using System.Drawing;
-using LibGalaxyControls.Source.TypeConverter;
-
+using LibGalaxyControls.Source.TypeConverters;
 using Size = LibGalaxyControls.Source.Json.SimpleObjects.Size;
 
-namespace LibGalaxyControls.Source.Interfaces
+namespace LibGalaxyControls.Source.Objects.Interfaces
 {
     [TypeConverter(typeof(ThemeConverter))]
     public interface IButtonTheme : ITheme

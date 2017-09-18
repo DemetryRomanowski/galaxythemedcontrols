@@ -1,7 +1,7 @@
 ﻿
 using System;
 
-namespace LibGalaxyControls.Source.Interfaces
+namespace LibGalaxyControls.Source.Objects.Interfaces
 {
     public interface ITheme
     {

@@ -2,13 +2,13 @@ using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Linq;
-using LibGalaxyControls.Source.Interfaces;
 using LibGalaxyControls.Source.Json.ThemeObjects;
+using LibGalaxyControls.Source.Objects.BaseObject;
+using LibGalaxyControls.Source.Objects.Interfaces;
 using LibGalaxyControls.Source.StaticConverters;
-
 using Size = LibGalaxyControls.Source.Json.SimpleObjects.Size;
 
-namespace LibGalaxyControls.Source
+namespace LibGalaxyControls.Source.Objects
 {
     [Serializable]
     public class ButtonTheme : Theme, IButtonTheme
