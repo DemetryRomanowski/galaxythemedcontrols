@@ -1,0 +1,67 @@
+{
+    //Control
+    "ButtonThemes": {
+        "Themes": [
+            //Default
+            {
+                "Name": "Default",
+                "BackColor": "#FFFFFF",
+                "ForeColor": "#003333",
+                "BorderColor": "#FFFFFF",
+                "MouseDownColor": "#44FFFF",
+                "MouseOverColor": "#BEEEEF",
+                "FontName": "Lato",
+                "FontSize": 14,
+                "UseResourceForImage": true,
+                //If using resource image then just put the resource name in imagepath
+                "ImagePath": "someimage",
+                "TextAlignment": "Center",
+                "ButtonName": "Default Button", 
+                "ButtonText": "Button", 
+                "Size": { 
+                    "Width": 200, 
+                    "Height": 100
+                }
+            }
+        ]
+    },
+    "RadioButtonThemes": { 
+        "Themes": [
+            //Default
+            {
+                "Name": "Default",
+                "BackColor": "#FFFFFF",
+                "ForeColor": "#003333",
+                "BorderColor": "#FFFFFF",
+                "MouseDownColor": "#44FFFF",
+                "MouseOverColor": "#BEEEEF",
+                "FontName": "Lato",
+                "FontSize": 14,
+                "ImagePath": "someimage",
+                "TextAlignment": "Center",
+                "ButtonName": "Default Button", 
+                "ButtonText": "Button", 
+                "Size": { 
+                    "Width": 200, 
+                    "Height": 100
+                }
+            }
+        ]
+    },
+    "TextBoxThemes": {
+        "Themes": [
+            //Default
+            {
+                "Name": "Default",
+                "BackColor": "#FFFFFF",
+                "ForeColor": "#003333",
+                "FontName": "Lato",
+                "FontSize": 14,
+                "Size": { 
+                    "Height": 25,
+                    "Width": 100 
+                }
+            }
+        ]
+    }
+}
