@@ -11,7 +11,15 @@ namespace LibGalaxyControls.Source.Objects.BaseObject
     [Serializable]
     public abstract class Theme : ITheme
     {
-        public static List<JsonButtonTheme> AvailableJsonColorThemes = GetJsonThemes().ButtonThemes.Themes;
+        public static List<JsonButtonTheme> AvailableJsonButtonThemes = 
+            GetJsonThemes().ButtonThemes.Themes;
+
+        public static List<JsonRadioButtonTheme> AvailableJsonRadioButtonThemes =
+            GetJsonThemes().RadioButtonThemes.Themes;
+
+        public static List<JsonTextBoxTheme> AvailableJsonTextBoxThemes =
+            GetJsonThemes().TextBoxThemes.Themes;
+
 
         public static JsonTheme JsonTheme = GetJsonThemes();
 

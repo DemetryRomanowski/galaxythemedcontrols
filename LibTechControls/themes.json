@@ -48,16 +48,19 @@
             }
         ]
     },
-    "TextFieldThemes": {
+    "TextBoxThemes": {
         "Themes": [
             //Default
             {
                 "Name": "Default",
                 "BackColor": "#FFFFFF",
                 "ForeColor": "#003333",
-                "BorderColor": "#FFFFFF",
                 "FontName": "Lato",
-                "FontSize": 14
+                "FontSize": 14,
+                "Size": { 
+                    "Height": 25,
+                    "Width": 100 
+                }
             }
         ]
     }

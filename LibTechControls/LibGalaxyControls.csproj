@@ -50,20 +50,23 @@
     <Compile Include="CustomControls\Fields\GalaxyTextBox.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="GlobalSuppressions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Include="Source\Objects\ButtonTheme.cs" />
     <Compile Include="CustomControls\Buttons\GalaxyButton.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Source\Objects\ButtonTheme.cs" />
     <Compile Include="Source\Objects\DesignerEditor\ButtonThemeSelector.cs" />
+    <Compile Include="Source\Objects\DesignerEditor\RadioButtonThemeSelector.cs" />
+    <Compile Include="Source\Objects\DesignerEditor\TextBoxThemeSelector.cs" />
     <Compile Include="Source\Objects\Interfaces\IButtonTheme.cs" />
     <Compile Include="Source\Objects\Interfaces\IRadioButtonTheme.cs" />
-    <Compile Include="Source\Objects\Interfaces\ITextFieldTheme.cs" />
+    <Compile Include="Source\Objects\Interfaces\ITextBoxTheme.cs" />
     <Compile Include="Source\Objects\Interfaces\ITheme.cs" />
     <Compile Include="Source\Json\JsonTheme.cs" />
     <Compile Include="Source\Json\ThemeObjects\JsonButton.cs" />

@@ -175,7 +175,7 @@
   <data name="DefaultJSON" xml:space="preserve">
     <value>{
     //Control
-    "ButtonThemes": {
+    "TextBoxThemes": {
         "Themes": [
             //Default
             {
@@ -217,7 +217,7 @@
             }
         ]
     },
-    "RadioButtonThemes": { 
+    "RadioTextBoxThemes": { 
         "Themes": [
             //Default
             {
@@ -241,7 +241,7 @@
             }
         ]
     },
-    "TextFieldThemes": {
+    "TextBoxThemes": {
         "Themes": [
             //Default
             {

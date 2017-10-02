@@ -7,6 +7,7 @@ namespace LibGalaxyControls.Source.TypeConverters
 {
     public class ThemeConverter : System.ComponentModel.TypeConverter
     {
+        /// <inheritdoc />
         /// <summary>
         /// Check if the type requested can be converted to type
         /// </summary>
@@ -18,6 +19,7 @@ namespace LibGalaxyControls.Source.TypeConverters
             return typeof(String) == destinationType;
         }
 
+        /// <inheritdoc />
         /// <summary>
         /// To convert the object to the display string
         /// </summary>

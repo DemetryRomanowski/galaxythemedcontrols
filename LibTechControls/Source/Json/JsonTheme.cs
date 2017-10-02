@@ -6,6 +6,6 @@ namespace LibGalaxyControls.Source.Json
     {
         public ButtonThemes ButtonThemes {get;set;}
         public RadioButtonThemes RadioButtonThemes {get;set;}
-        public TextFieldThemes TextFieldThemes {get;set;}
+        public TextBoxThemes TextBoxThemes {get;set;}
     }
 }

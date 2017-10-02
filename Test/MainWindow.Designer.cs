@@ -40,9 +40,11 @@ namespace ThemeEditor
             this.ControlLabel = new System.Windows.Forms.Label();
             this.ValueLabel = new System.Windows.Forms.Label();
             this.LiveControlViewPanel = new System.Windows.Forms.Panel();
+            this.galaxyTextBox1 = new LibGalaxyControls.CustomControls.Fields.GalaxyTextBox();
             this.LiveJsonViewer = new System.Windows.Forms.RichTextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.LiveControlViewPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // FieldCmbx
@@ -114,10 +116,25 @@ namespace ThemeEditor
             // 
             // LiveControlViewPanel
             // 
+            this.LiveControlViewPanel.Controls.Add(this.galaxyTextBox1);
             this.LiveControlViewPanel.Location = new System.Drawing.Point(408, 8);
             this.LiveControlViewPanel.Name = "LiveControlViewPanel";
             this.LiveControlViewPanel.Size = new System.Drawing.Size(512, 584);
             this.LiveControlViewPanel.TabIndex = 8;
+            // 
+            // galaxyTextBox1
+            // 
+            this.galaxyTextBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.galaxyTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.galaxyTextBox1.Font = new System.Drawing.Font("Arial", 25F);
+            this.galaxyTextBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
+            this.galaxyTextBox1.Location = new System.Drawing.Point(8, 8);
+            this.galaxyTextBox1.Name = "galaxyTextBox1";
+            this.galaxyTextBox1.PlaceHolder = "dsfaf...";
+            this.galaxyTextBox1.Size = new System.Drawing.Size(496, 39);
+            this.galaxyTextBox1.TabIndex = 0;
+            this.galaxyTextBox1.Text = "dsfaf...";
+            this.galaxyTextBox1.TextBoxTheme = null;
             // 
             // LiveJsonViewer
             // 
@@ -167,6 +184,8 @@ namespace ThemeEditor
             this.ShowIcon = false;
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.Text = "Themer";
+            this.LiveControlViewPanel.ResumeLayout(false);
+            this.LiveControlViewPanel.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -186,6 +205,7 @@ namespace ThemeEditor
         private System.Windows.Forms.RichTextBox LiveJsonViewer;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
+        private LibGalaxyControls.CustomControls.Fields.GalaxyTextBox galaxyTextBox1;
     }
 }
 

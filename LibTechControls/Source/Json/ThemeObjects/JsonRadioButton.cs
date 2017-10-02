@@ -4,10 +4,9 @@ using LibGalaxyControls.Source.Json.SimpleObjects;
 
 namespace LibGalaxyControls.Source.Json.ThemeObjects
 {
-    
     public class RadioButtonThemes
     {
-        private List<JsonRadioButtonTheme> Themes { get; set; }
+        public List<JsonRadioButtonTheme> Themes { get; set; }
     }
 
     public class JsonRadioButtonTheme

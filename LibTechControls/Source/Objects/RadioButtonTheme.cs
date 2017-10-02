@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Drawing;
+using System.Linq;
+using LibGalaxyControls.Source.Json.ThemeObjects;
 using LibGalaxyControls.Source.Objects.BaseObject;
 using LibGalaxyControls.Source.Objects.Interfaces;
 using Size = LibGalaxyControls.Source.Json.SimpleObjects.Size;
@@ -11,14 +13,26 @@ namespace LibGalaxyControls.Source.Objects
     public class RadioButtonTheme : Theme, IRadioButtonTheme
     {
 
-        public RadioButtonTheme()
+        public static RadioButtonTheme RadioButtonThemeSingleton { get; set; } = new RadioButtonTheme();
+
+        /// <summary>
+        /// Default ctor
+        /// </summary>
+        public RadioButtonTheme() { }
+
+        public RadioButtonTheme(JsonRadioButtonTheme converted)
         {
             
         }
 
+        /// <inheritdoc />
+        /// <summary>
+        /// Return all the radio button themes
+        /// </summary>
+        /// <returns></returns>
         internal override List<ITheme> GetAllThemes()
         {
-            throw new System.NotImplementedException();
+            return AvailableJsonRadioButtonThemes.Select(availableJsonColorTheme => (ITheme)new RadioButtonTheme(availableJsonColorTheme)).ToList();
         }
 
         public Color BackColor { get; set; }
